@@ -1,0 +1,27 @@
+{
+    "DB_NAME": "deltrondb",
+    "DB_USER": "staffcreativa",
+    "DB_PASSWORD": "staffcreativa",
+    "DB_PORT": "5432",
+
+    "URL_SITE": "http://127.0.0.1:8000",
+    "SECRET_KEY": "0123456789ABCDEFGH",
+
+    "EMAIL_HOST": "smtp.webfaction.com",
+    "EMAIL_HOST_USER": "webmaster_staff",
+    "EMAIL_HOST_PASSWORD": "142857",
+    "DEFAULT_FROM_EMAIL": "webmaster@staffcreativa.pe",
+    "SERVER_EMAIL": "webmaster@staffcreativa.pe",
+    "EMAIL_PORT": 587,
+
+    "MEDIA_ROOT": "",
+    "MEDIA_URL": "/media/",
+    "STATIC_ROOT": "",
+    "STATIC_URL": "/static/",
+    "ALLOWED_HOSTS": ["127.0.0.1"],
+
+    "WORKON_HOME": "/home/{user}/.virtualenvs",
+    "ENV": "deltron",
+
+    "SENTRY_DSN": "123"
+}

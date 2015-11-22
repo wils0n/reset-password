@@ -1,0 +1,15 @@
+
+
+{% load i18n %}{% autoescape off %}
+
+Usted esta recibiendo este email porque ha solicitado resetear su password de su cuenta en el sitio: {{ site_name }}.
+Por favor vaya a la siguiente página y elija un nuevo password.
+
+{% block reset_link %}
+{{ protocol }}://{{ domain }}{% url 'password_reset_confirm2' uidb64=uid token=token %}
+{% endblock %}
+
+{% trans "Your username, in case you've forgotten:" %} {{ user.get_username }}
+
+{% trans "Gracias por usar nuestro sitio!" %}
+{% endautoescape %}

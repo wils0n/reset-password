@@ -1,0 +1,23 @@
+{% extends "common/_base.html" %}
+
+{% block content %}
+
+{% if validlink %}
+
+<p>Por favor, ingresar su nuevo password:</p>
+
+<form action="" method="post">{% csrf_token %}
+  <label for="id_new_password1">New password:</label><br>
+  <input id="id_new_password1" name="new_password1" type="password"></p>
+  <p class="aligned wide"><label for="id_new_password2">Confirm password:</label><br>
+  <input id="id_new_password2" name="new_password2" type="password"></p>
+  <p><input type="submit" value="Change my password"></p>
+</form>
+
+{% else %}
+
+<p>El link no es valido, posiblemente porque ya ha sido usado</p>
+
+{% endif %}
+
+{% endblock %}
