@@ -12,9 +12,9 @@ def confirm(request, uidb64=None, token=None):
 
 
 def reset(request):
-    email = request.POST.get('email', None)
     template_name='custom/custom_password_reset_form.html'
     if request.POST:
+        email = request.POST.get('email', None)
         if email is not None:
             exist = User.objects.filter(email__iexact=email)
             template_name='custom/custom_password_reset_form.html'
